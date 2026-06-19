@@ -1,3 +1,104 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+# ===================================
+#   GitHub Pages - _config.yml
+#   Sikandar Abbas - Portfolio Site
+# ===================================
+
+# ----- Site Info -----
+title: "Sikandar Abbas"
+description: "Computer Science Student | Data Analyst | AI Enthusiast | Full-Stack Developer"
+tagline: "Building efficient software solutions with a passion for AI & Data."
+
+# ----- Author / Profile Image -----
+author:
+  name: "Sikandar Abbas"
+  email: "sikandarabbas396@gmail.com"
+  avatar: "/assets/images/profile.jpg"   # <-- apni photo yahan upload karein
+  bio: "BSCS Student at Green International University. Data Analyst & Digital Marketing Specialist."
+  location: "Punjab, Pakistan"
+
+# ----- Social Links -----
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sikandarabbas1/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:sikandarabbas396@gmail.com"
+    - label: "WhatsApp"
+      icon: "fab fa-fw fa-whatsapp"
+      url: "https://wa.me/923016978472"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sikandarabbas1"   # <-- apna GitHub username daalen
+
+# ----- Site Logo (Browser Tab & Header) -----
+logo: "/assets/images/logo.png"   # <-- optional logo image
+
+# ----- Open Graph / SEO (Social Media Preview) -----
+og_image: "/assets/images/profile.jpg"   # <-- image jo social media preview mein dikhe
+
+# ----- Theme -----
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+# Aur themes: "pages-themes/cayman@v0.2.0", "pages-themes/slate@v0.2.0"
+
+minimal_mistakes_skin: "dark"
+# Options: default | air | aqua | contrast | dark | dirt | mint | neon | plum | sunrise
+
+# ----- URL Settings -----
+url: "https://sikandarabbas1.github.io"   # <-- apna GitHub Pages URL
+baseurl: ""
+
+# ----- Build Settings -----
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# ----- Plugins -----
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# ----- SEO Tags -----
+twitter:
+  username: ""   # optional
+facebook:
+  app_id: ""     # optional
+
+# ----- Navigation Menu -----
+header_pages:
+  - about.md
+  - projects.md
+  - contact.md
+
+# ----- Defaults -----
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+
+# ----- Date Format -----
+date_format: "%B %d, %Y"
+
+# ----- Exclude from Build -----
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .gitignore
+  - README.md
